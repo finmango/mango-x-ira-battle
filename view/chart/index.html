@@ -63,8 +63,7 @@
             and your Traditional IRA balance could be <span id="curr-trad-balance" style="font-size: large;"></span>.
             If you invested in a Taxable Brokerage Account instead, 
             your balance would only be about <span id="taxableacctbalance" style="font-size: large;"> $XXX,XXX</span>.
-            </span> 
-        </h2>
+        </span></h2>
     </div>
     <div class="spacer"></div>
     <div class="spacer"></div>
@@ -83,7 +82,7 @@
                     <br>
                     <small>You can open an IRA account at any age you have earned income. If you are under 18, need help tough! See what happens when you start investing early.</small>
                 </label>
-                <input type="number" pattern="/d*" id="age" min="18" value="16" style="margin-top: auto;">
+                <input type="number" pattern="/d*" id="age" min="16" value="16" style="margin-top: auto;">
                 <div class="spacer"></div>
             </div>
             <div>
@@ -103,7 +102,7 @@
                     <br>
                     <small>Set to $0 if you do not have one yet!</small>
                 </label>
-                <input type="number" pattern="/d*" id="initial-balance" min="1" value="0">
+                <input type="number" pattern="/d*" id="initial-balance" min="0" value="0">
                 <div class="spacer"></div>
             </div>
             <div>
@@ -121,7 +120,7 @@
                     <br>
                     <small>65 is a normal retirement age at which you can draw full Social Security benefits.</small>
                 </label>
-                <input type="number" pattern="/d*" id="retirement-age" min="1" value="65">
+                <input type="number" pattern="/d*" id="retirement-age" min="59" value="65">
                 <div class="spacer"></div>
             </div>
             <div>
@@ -192,6 +191,11 @@
                             we assume that your retirement tax rate is 3% lower than your marginal tax bracket. 
                             We also add the taxable savings from investing in a Traditional IRA back into the total. 
                         </li>
+                        <div class="screen animated" id="nav">
+                            <div class="centered flex one">
+                                <button onclick="https://finmango.github.io/mango-x-ira-battle/">START OVER</button>
+                            </div>
+                        </div>
                     </small>
                 </label>
                 <div class="spacer"></div>
