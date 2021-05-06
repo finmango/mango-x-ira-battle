@@ -1,6 +1,6 @@
 {
-  "displayName": "FinMango Roth IRA Calculator",
-  "description": "Roth IRA calculator, made by FinMango",
+  "displayName": "FinMango Battle of the IRAs Calculator",
+  "description": "IRA Battle calculator, made by FinMango",
   "vars": {
     "analytics": "UA-xxxx-4",
     "email": "katherine@finmango.org",
