@@ -1,14 +1,14 @@
 <!DOCTYPE html><html><!-- HTML page head --><head>
     <!-- HTML metadata -->
     <meta charset="UTF-8">
-    <title>Mango Bites</title>
-    <meta name="description" content="Mango Bites, made by FinMango">
+    <title>FinMango Battle of the IRAs Calculator</title>
+    <meta name="description" content="IRA Battle calculator, made by FinMango">
     <link rel="icon" type="image/ico" href="../../static/favicon.ico">
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Mango Bites">
+    <meta name="apple-mobile-web-app-title" content="FinMango Battle of the IRAs Calculator">
 
     <!-- Homescreen icons -->
     <link rel="apple-touch-icon" href="../../static/favicon.ico">
@@ -57,7 +57,213 @@
         <h2 class="centered" style="text-transform: none; font-size: xx-large;">
             BATTLE OF THE IRAs CALCULATOR
         </h2>
+        <p class="centered one" style="text-align: justify;">
+            Want to become a millionaire someday 💲📈? Two major ways to 
+            invest your money to build wealth are two Individual Retirement Accounts:
+            <b>TRADITIONAL IRA</b> and <b>ROTH IRA</b>. You can open just one or both!             
+        </p>
+        <p class="centered one" style="text-align: justify;">
+            In life, we all have to pay <b>TAXES</b> eventually. Both accounts provide
+            <b>TAX ADVANTAGES</b> while growing your money, 
+            but the biggest differences are 1. which you qualify for based on your income and 2. how and when you get a tax break.              
+        </p>
+        <p class="centered one" style="text-align: justify;">
+            Now, let's see how much 
+            your savings can grow and which IRA wins in the end!
+        </p>
+        <div class="spacer"></div>
+    </div> 
+
+    <div class="screen animated" id="mangox-rothira-screen-2">
+        <div>
+            <h2 class="centered" style="text-transform: uppercase; font-size: x-large;">
+                What is your age and income? 
+            </h2>
+            <p class="centered one" style="text-align: justify;">
+                You can open a traditional IRA and Roth IRA at any age as long as you make money 
+                from a job or self-employment. 
+                If you are below 18, you may need your parent or guardian's help.            
+            </p>
+            <p class="centered one" style="text-align: justify;">
+                To qualify for a Roth IRA, you must make less than $140,000 per year before taxes. 
+                On the other hand, there is no income limit for a Traditional IRA! 
+                However, these differences influence tax breaks. 
+            </p>
+        </div>
+        <div class="centered flex one">
+            <label for="age">
+                Your Age
+            </label>
+            <input type="number" pattern="/d*" id="age" min="16" value="16">
+            <span class="centered" style="font-size: small;"> 
+            </span>
+        </div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="centered flex one">
+            <label for="initial-income">
+                Your Income (or Anticipated Income)
+            </label>
+            <input type="number" pattern="/d*" id="initial-income" min="1" max="139000" value="10000">
+            <span class="centered" style="font-size: small;"> 
+                Sources of earned income are having a job or self-employment (babysitting, lawnmowing, etc). 
+                If you hit the income limit for a Roth IRA, we will stop contributing to the Roth 
+                but allow the Traditional IRA to continue growing since there is no income limit.
+            </span>
+        </div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
     </div>
+
+
+    <div class="screen animated" id="mangox-rothira-screen-3">
+        <h2 class="centered" style="text-transform: uppercase; font-size: x-large;">
+            RULES FOR CONTRIBUTING MONEY
+        </h2>
+        <p class="centered one" style="text-align: justify;">
+           For both traditional and Roth IRAs, 
+           you can contribute up to $6,000 per year if you are under the age of 50, and you can add money anytime. 
+           If you decide to open up both accounts, you can, but the limit is $6,000 combined!
+        </p>
+        <div class="spacer"></div>
+        <div class="centered flex one">
+            <label for="annual-contribution">
+                Your Annual Contribution
+            </label>
+            <input type="number" pattern="/d*" id="annual-contribution" min="0" value="1000">
+            <span class="centered" style="font-size: small;">
+                The max you can contribute if you are less than 50 years old is $6000 per year.           
+            </span>
+            
+        </div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+    </div>
+
+    <div class="screen animated" id="mangox-rothira-screen-4">
+        <h2 class="centered" style="text-transform: uppercase; font-size: x-large;">
+            RULES FOR WITHDRAWING MONEY
+        </h2>
+
+        <p class="centered one" style="text-align: justify;"> 
+            <b>The rules for withdrawing money differ </b> for Traditional IRAs and Roth IRAs.  
+         </p>
+         <p class="centered one" style="text-align: justify;"> 
+            Let's start with early withdrawals. For traditional IRAs, early withdrawals before the age of 59½
+            are taxed as income and usually have a 10% penalty. 
+            Similarly, withdrawals from a Roth IRA may have some taxes and penalties on  
+            earnings depending on what you use the money for. 
+         </p>
+        <p class="centered one" style="text-align: justify;">  
+            Now, let's move onto regular withdrawls after the age 59½.
+            For a traditional IRA, these withdrawals are taxed at your retirement tax rate.  
+            On the other hand for Roth IRAs, if you have been contributing money for 5+ years, 
+            withdrawals are 100% tax-free, penalty-free, and can be taken out anytime!  
+        </p>
+        <p class="centered one" style="text-align: justify;">  
+           <b>BOTTOM LINE:</b> Set this money aside to grow more wealth in the long-run 🔥💲📈.
+        </p>
+        <div class="spacer"></div>
+        <div class="centered flex one">
+            <label for="initial-balance">
+                Your Current Balance
+            </label>
+            <input type="number" pattern="/d*" id="initial-balance" min="0" value="0">
+            <span class="centered" style="font-size: small;">
+                Set to $0 if you do not have one yet!            
+            </span>
+        </div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+    </div>
+
+    <div class="screen animated" id="mangox-rothira-screen-4">
+        <div>
+            <h2 class="centered" style="text-transform: none; font-size: x-large;">
+                BATTLE OF THE IRAs: TAX ADVANTAGES
+            </h2>
+        </div>
+        <p class="centered one" style="text-align: justify;">
+            Traditional IRAs and Roth IRAs provide different tax advantages to help you grow your wealth. 
+            
+        </p>
+        <p class="centered one" style="text-align: justify;">
+            <b>Roth IRAs grow Tax-Free:</b> When you contribute to a Roth IRA, you still have to pay taxes on that money.   
+            However, you pay no taxes on money you withdraw during retirement!
+            This makes sense if you expect to pay more taxes in retirement than you do now.  
+        </p>
+        <p class="centered one" style="text-align: justify;">
+            <b>Traditional IRAs are Tax-Deferred:</b> When you contribute to a traditional IRA, you get an upfront tax break, 
+            meaning that you pay less taxes for that year. 
+            However, you'll pay income taxes on withdrawls during retirement. 
+            This makes sense if you have pretty high income (and may not qualify for a Roth) and expect to 
+            pay less taxes in retirement. 
+        </p>
+        <p class="centered one" style="text-align: justify;">
+            Would you rather pay taxes sooner or later? 
+            Take a second to think about the pros and cons of each tax advantage.
+        </p>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+    </div>
+    <div class="screen animated" id="mangox-rothira-screen-5">
+        <div>
+            <h2 class="centered" style="text-transform: uppercase; font-size: x-large;">
+                What is your risk tolerance?
+            </h2>
+        </div>
+        <p class="centered one" style="text-align: justify;">
+            How you invest your money (examples: stocks, bonds, mutual funds, ETFs) impacts how much your money grows.          
+        </p>
+        <p class="centered one" style="text-align: justify;">
+            The <b>RISK/RETURN TRADE-OFF</b> is that the more aggressive risk you take on, 
+            the greater your Rate of Return (RoR) and reward if the investment makes money. 
+            On the other hand, if you only take a small risk, you will get a smaller reward. 
+            Your <b>RISK TOLERANCE</b> is a personal choice!
+        </p>
+        <p class="centered one" style="text-align: justify;"> 
+            For example, if you invest in Coinbase Stock 💰, you may see the value of your account take dips at times. 
+            This is okay for IRAs since if you do not need the money here in the near future
+            and want it grow more in the long haul. 
+        </p>
+        <div class="centered flex one">
+            <label for="risk-tolerance">
+                What is your Risk Tolerance?
+            </label>
+            <select id="risk-tolerance">
+                <option value="10">Aggressive (10% RoR)</option>
+                <option value="7" selected>Moderate (7-8% RoR)</option>
+                <option value="5.5">Conservative (5-6% RoR)</option>
+            </select> 
+            <span class="centered" style="font-size: small;">
+                Average Rates of Return (RoR) are estimated based on historical averages. 
+            </span>           
+        </div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+    </div>
+
+    <div class="screen animated" id="mangox-rothira-screen-6">
+        <div>
+            <h2 class="centered" style="text-transform: uppercase; font-size: xx-large;">
+                Compounding Interest... 💲💲💲
+            </h2>
+            <p class="centered one" style="text-align: justify;"> 
+                Traditional IRAs and Roth IRAs utilize <b>COMPOUNDING 📈</b>, 
+                which enables your money grows quickly especially when you start early.
+            </p>
+            <p class="centered one" style="text-align: justify;">
+                Now, let's see how their balance grows over time and 
+                see who won the Battle of the IRAs based on your inputs!            
+            </p>
+        </div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+    </div>
+
 
     <div class="screen animated" id="nav">
         <div class="centered flex one">
