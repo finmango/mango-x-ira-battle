@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/goldman-sans">
     <link rel="stylesheet" href="../../third_party/picnic/picnic.min.css">
     <link rel="stylesheet" href="../../static/styles.min.css">
+    <link rel="stylesheet" href="../../components/stylesurvey.css">
 
     <!-- Polyfills, custom functions and constants -->
     <script type="text/javascript" src="../../static/cache.min.js"></script>
@@ -51,22 +52,22 @@
         <div class="spacer"></div>
 
         <div id="mangox-rothira-survey">
-    <style>.animated{transition:all .5s ease-in-out}.screen{height:0;opacity:0;overflow:hidden;max-width:600px;display:block;margin-left:auto;margin-right:auto}.screen-visible{height:auto;opacity:1;overflow:initial}</style>
+    <style>.animated{transition:all .5s ease-in-out}.screen{height:0;opacity:0;overflow:hidden;max-width:600px;display:block;margin-left:auto;margin-right:auto}.screen-visible{height:auto;opacity:1;overflow:initial}.center{display:block;margin-left:auto;margin-right:auto;width:50%;top:0;left:70px;position:absolute}.mangos{position:relative}</style>
 
     <div class="screen animated" id="mangox-rothira-screen-1">
-        <h2 class="centered" style="text-transform: none; font-size: xx-large;">
-            BATTLE OF THE IRAs CALCULATOR
+        <h2 class="centered" style="text-transform: none; font-size: large;">
+            Click to take a mango bite!
         </h2>
     </div>
 
-    <div class="screen animated" id="nav">
-        <div class="centered flex one">
-            <button id="next">NEXT</button>
-            <button onclick="window.location.reload()">START OVER</button>
-        </div>
+    <div class="mangos">
+        <img src="./static/mango_bite.svg" id="mango-bite" alt="mango bite svg" height="100" width="110" class="center">
+        <img src="./static/mango.svg" id="mango" alt="mango svg" height="100" width="110" class="center">
     </div>
 
-    <script async>!async function(){const e=document.currentScript.parentElement;let c=0;const s=[].slice.call(e.querySelectorAll("div.screen"),0,-1);e.querySelector("#next").addEventListener("click",t=>{if(c+1<s.length){const e=s[c],t=s[c+1];e.classList.remove("screen-visible"),t.classList.add("screen-visible"),c++}else{const c=[].slice.call(e.querySelectorAll("input, select")),s=window.location.pathname.includes("/embed/")?"./embed/chart/":"./view/chart/",t=new URL(s,window.location.href);c.forEach(e=>{t.searchParams.set(e.id,e.value)}),window.location=t}}),e.querySelector("div.screen:first-of-type").classList.add("screen-visible"),e.querySelector("#nav").classList.add("screen-visible")}();</script>
+
+    <script async>!async function(){const e=document.currentScript.parentElement;[].slice.call(e.querySelectorAll("div.screen"),0,-1);e.querySelector("div.screen:first-of-type").classList.add("screen-visible"),e.querySelector("#mango").addEventListener("click",e=>{document.getElementById("mango").style.display="none",document.getElementById("mango-bite").style.display="block",console.log("hi mango")}),e.querySelector("#mango-bite").addEventListener("click",e=>{document.getElementById("mango").style.display="block",document.getElementById("mango-bite").style.display="none",console.log("hi mango bite")})}();</script>
+    
 </div>
 
         <!-- Add some whitespace to the bottom -->
